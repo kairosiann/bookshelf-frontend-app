@@ -26,16 +26,15 @@ const CreateButton = ({ onPress }) => {
 
 // Bottom app navigator tab
 export default function AppNavigator() {
-	return {
+	return (
 		<Tab.Navigator screenOptions={{
 			headerShown: false,
 			tabBarShowLabel: true,
 			tabBarStyle: styles.tabBar,
 			tabBarActiveTintColor: colors.primary,
 			tabBarInactiveTintColor: colors.textDark,
-			tabbarLabelStyle: styles.tabBarLabel,
-		}}
-		>
+			tabBarLabelStyle: styles.tabBarLabel,
+		}}>
 			<Tab.Screen name="Home" component={HomeScreen} options={{
 				tabBarIcon: ({ color, size }) => (
 					// <Feather name="home" size={size} color={color}/>
@@ -53,7 +52,7 @@ export default function AppNavigator() {
 				),
 			}}/>
 		</Tab.Navigator>
-	};
+	);
 }
 
 // Styles
