@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "bookshelf",
 		"slug": "bookshelf",
-		"version": "1.0.0",
+		"version": "^52.0.41",
 		"sdkVersion": "1.12.8",
 		"platforms": ["ios", "android", "web"],
 		"scheme": "bookshelf",

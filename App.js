@@ -16,7 +16,7 @@ export default function App() {
 	const [fontsLoaded, setFontsLoaded] = useState(false);
 
 	// Loading custom fonts
-	useEffects(() => {
+	useEffect(() => {
 		async function loadFonts() {
 			await Font.loadAsync({
 				'Merriweather': require('./assets/fonts/Merriweather-Regular.ttf'),
